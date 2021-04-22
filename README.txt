@@ -19,7 +19,8 @@ It is important to note this will be an influence and does not allow you to dire
 [*]This is classified as a manipulation category type operation
 [*]Costs 3600 energy
 [*]Upkeep 12 energy
-[*]Lasts five years
+[*]Operational difficulty of 10
+[*]Effects last five years
 [/list]
 
 If you like this mod please upvote and favorite it and please check out my other mods:
