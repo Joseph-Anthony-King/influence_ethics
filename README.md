@@ -24,3 +24,4 @@ If you like this mod please upvote and favorite it and please check out my other
 - [Forward Earth - Vanilla](https://steamcommunity.com/sharedfiles/filedetails/?id=2073000388)
 - [Forward Earth - Base](https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914)
 - [This is Ceti Alpha V! (Star Names)](https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775)
+- [Exo Political Theory](https://steamcommunity.com/sharedfiles/filedetails/?id=2141583417)
