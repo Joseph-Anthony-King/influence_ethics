@@ -1,0 +1,361 @@
+namespace = influence_ethics
+
+espionage_operation_event = {
+    id = influence_ethics.1
+    title = "operation_influence_ethics.1.name"
+    desc = "operation_influence_ethics.1.desc"
+    espionage_operation = yes
+    picture = GFX_evt_decryption
+    show_sound = event_encrypted_comms
+    is_triggered_only = yes
+
+    trigger = {
+        exists = from.target
+    }
+
+    option = { name = INTERESTING }
+
+    immediate = {
+		target = { save_event_target_as = target_country }
+
+        set_espionage_operation_flag = influence_ethics
+
+        event_target:target_country = {
+            set_country_flag = influence_target
+        }
+    }
+}
+
+espionage_operation_event = {
+	id = influence_ethics.2
+    title = "operation_influence_ethics.2.name"
+    desc = "operation_influence_ethics.2.desc"
+    espionage_operation = yes
+    picture = GFX_evt_spy_network
+    show_sound = event_espionage_concluded
+	is_triggered_only = yes
+
+	immediate = {
+		target = { save_event_target_as = target_country }
+        
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_authoritarian
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = authoritarian_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_fanatic_authoritarian
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = fanatic_authoritarian_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_egalitarian
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = egalitarian_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_fanatic_egalitarian
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = fanatic_egalitarian_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_materialist
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = materialist_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_fanatic_materialist
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = fanatic_materialist_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_militarist
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = militarist_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_fanatic_militarist
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = fanatic_militarist_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_pacifist
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = pacifist_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_fanatic_pacifist
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = fanatic_pacifist_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_spiritualist
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = spiritualist_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_fanatic_spiritualist
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = fanatic_spiritualist_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_xenophile
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = xenophile_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_fanatic_xenophile
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = xenophile_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_xenophobe
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = xenophobe_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+        if = {
+            limit = {
+                owner =  {
+                    has_ethic = ethic_fanatic_xenophobe
+                }
+            }
+            event_target:target_country = {
+                add_modifier = {
+                    modifier = fanatic_xenophobe_influence
+                    days = 1800
+                }
+
+                country_event = { 
+                    id = influence_ethics.3 
+                    days = 1800 
+                }
+            }
+        }
+
+        root.owner = {
+            country_event = { id = influence_ethics.4 days = 1800 }
+        }
+	}
+
+    option = { name = INTERESTING }
+}
+
+country_event = {
+    id = influence_ethics.3
+	hide_window = yes
+	is_triggered_only = yes
+
+    immediate = {
+		target = { save_event_target_as = target_country }
+
+        event_target:target_country = {
+            remove_country_flag = influence_target
+        }
+    }
+}
+
+country_event = {
+    id = influence_ethics.4
+    title = "operation_influence_ethics.4.name"
+    desc = "operation_influence_ethics.4.desc"
+    picture = GFX_evt_spy_network
+    show_sound = event_espionage_concluded
+	is_triggered_only = yes
+
+    option = { name = UNFORTUNATE }
+}
