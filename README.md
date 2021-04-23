@@ -1,4 +1,4 @@
-# Influence Ethics Espionage Operation
+# Espionage Operation: Influence Ethics
 
 This mod adds a new espionage operation, influence ethics, which permits you to exert influence on the target empire's internal ethics.  This is a two stage operation and after the successful completion of the second step you will exert influence on the target empires ethics for five years.
 
