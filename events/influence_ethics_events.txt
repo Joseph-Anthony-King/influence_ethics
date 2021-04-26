@@ -1,8 +1,8 @@
 namespace = influence_ethics
 
-### exoPoliticalTheory.00 - Set influence ethics mod global flag
+### influence_ethics.00 - Set influence ethics mod global flag
 event = {
-	id = exoPoliticalTheory.00
+	id = influence_ethics.00
 	hide_window = yes
 	is_triggered_only = yes
 	fire_only_once = yes
