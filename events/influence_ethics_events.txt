@@ -1,9 +1,19 @@
 namespace = influence_ethics
 
+### exoPoliticalTheory.00 - Set influence ethics mod global flag
+event = {
+	id = exoPoliticalTheory.00
+	hide_window = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { set_global_flag = influenceEthicsModEnabled }
+}
+
+### First Stage
 espionage_operation_event = {
-    id = influence_ethics.1
-    title = "operation_influence_ethics.1.name"
-    desc = "operation_influence_ethics.1.desc"
+    id = influence_ethics.01
+    title = "operation_influence_ethics.01.name"
+    desc = "operation_influence_ethics.01.desc"
     espionage_operation = yes
     picture = GFX_evt_decryption
     show_sound = event_encrypted_comms
@@ -26,10 +36,11 @@ espionage_operation_event = {
     }
 }
 
+### Second Stage
 espionage_operation_event = {
-	id = influence_ethics.2
-    title = "operation_influence_ethics.2.name"
-    desc = "operation_influence_ethics.2.desc"
+	id = influence_ethics.02
+    title = "operation_influence_ethics.02.name"
+    desc = "operation_influence_ethics.02.desc"
     espionage_operation = yes
     picture = GFX_evt_spy_network
     show_sound = event_espionage_concluded
@@ -51,7 +62,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -69,7 +80,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -87,7 +98,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -105,7 +116,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -123,7 +134,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -141,7 +152,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -159,7 +170,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -177,7 +188,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -195,7 +206,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -213,7 +224,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -231,7 +242,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -249,7 +260,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -267,7 +278,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -285,7 +296,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -303,7 +314,7 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
@@ -321,22 +332,23 @@ espionage_operation_event = {
                 }
 
                 country_event = { 
-                    id = influence_ethics.3 
+                    id = influence_ethics.03 
                     days = 1800 
                 }
             }
         }
 
         root.owner = {
-            country_event = { id = influence_ethics.4 days = 1800 }
+            country_event = { id = influence_ethics.04 days = 1800 }
         }
 	}
 
     option = { name = INTERESTING }
 }
 
+### Remove the target flag from the target country after the five year period is complete
 country_event = {
-    id = influence_ethics.3
+    id = influence_ethics.03
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -349,10 +361,11 @@ country_event = {
     }
 }
 
+### Advise the user this influence operation is complete
 country_event = {
-    id = influence_ethics.4
-    title = "operation_influence_ethics.4.name"
-    desc = "operation_influence_ethics.4.desc"
+    id = influence_ethics.04
+    title = "operation_influence_ethics.04.name"
+    desc = "operation_influence_ethics.04.desc"
     picture = GFX_evt_spy_network
     show_sound = event_espionage_concluded
 	is_triggered_only = yes
