@@ -53,6 +53,7 @@ operation_influence_ethics = {
         has_nemesis = yes
 		owner = { is_gestalt = no }
         target = {
+            is_gestalt = no 
             not = {
                 has_country_flag = influence_target
             }
