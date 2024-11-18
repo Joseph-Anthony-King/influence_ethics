@@ -28,7 +28,6 @@ If you like this mod please upvote and favorite it and please check out my other
 [list]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2112221417]Forward Earth - Planetary Diversity[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2073000388]Forward Earth - Vanilla[/url]
-[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2078567914]Forward Earth - Base[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=1155894775]This is Ceti Alpha V! (Star Names)[/url]
 [*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=2141583417]Exo Political Theory[/url]
 [/list]
